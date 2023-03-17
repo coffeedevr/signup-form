@@ -7,9 +7,14 @@ body {
     font-family: 'Philosopher', 'Play', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-p { margin: 0; padding: 0;}
+p {
+    margin: 0;
+    padding: 0;
+}
 
-a { color: inherit; } 
+a {
+    color: inherit;
+}
 
 .main-wrapper {
     display: flex;
@@ -21,13 +26,11 @@ a { color: inherit; }
 
     width: var(--leftbar-width);
     height: var(--leftbar-height);
+    min-width: 350px;
 
-    background-image:  
-    /* top, transparent red */
-    linear-gradient(
-      rgba(255, 255, 255, 0.4), 
-      rgba(255, 255, 255, 0.3)
-    ),url(img/monsterhunter.jpg);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.3)), url(img/monsterhunter.jpg);
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -58,22 +61,20 @@ a { color: inherit; }
 
     width: var(--rightbar-width);
     height: var(--rightbar-height);
+    min-width: 512px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .tagline-block {
     width: var(--rightbar-width);
+    min-width: 512px;
     height: 30vh;
-    display: block;
 }
 
 .tagline-wrapper {
-    padding-top: 100px;
-    padding-left: 2vw;
-}
-
-.tagline-msg {
-    padding: 0px;
-    margin: 2px 0px 0px 0px;
+    padding: 4vw 0 0 2vw;
 }
 
 .msg-1 {
@@ -141,16 +142,16 @@ input:focus:invalid {
     flex-wrap: wrap;
 }
 
-.formrow > p {
+.formrow>p {
     margin-right: 30px;
 }
 
 .buttons-wrapper {
-    padding: 3vh 0px 0px 2vw;
+    padding: 2vh 0px 0px 2vw;
     height: auto;
 }
 
-.buttons-wrapper > p > span {
+.buttons-wrapper>p>span {
     color: rgb(14, 92, 116);
 }
 
