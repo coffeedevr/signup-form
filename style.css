@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-family: 'Philosopher', 'Play', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p { margin: 0; padding: 0;}
+
+a { color: inherit; } 
+
+.main-wrapper {
+    display: flex;
+}
+
+.left-block {
+    --leftbar-width: 40vw;
+    --leftbar-height: 100vh;
+
+    width: var(--leftbar-width);
+    height: var(--leftbar-height);
+
+    background-image:  
+    /* top, transparent red */
+    linear-gradient(
+      rgba(255, 255, 255, 0.4), 
+      rgba(255, 255, 255, 0.3)
+    ),url(img/monsterhunter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#logo {
+    border-radius: 10%;
+    padding: 10px;
+    height: 300px;
+    width: auto;
+}
+
+#logo:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.logo-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-block {
+    --rightbar-width: 60vw;
+    --rightbar-height: 100vh;
+
+    width: var(--rightbar-width);
+    height: var(--rightbar-height);
+}
+
+.tagline-block {
+    width: var(--rightbar-width);
+    height: 30vh;
+    display: block;
+}
+
+.tagline-wrapper {
+    padding-top: 100px;
+    padding-left: 2vw;
+}
+
+.tagline-msg {
+    padding: 0px;
+    margin: 2px 0px 0px 0px;
+}
+
+.msg-1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.msg-2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.msg-3 {
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.form-wrapper {
+    width: calc(var(--rightbar-width) - 2vw);
+    font-family: 'Rambla';
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+
+.form-control-wrapper {
+    width: calc(var(--rightbar-width) - 2vw);
+    box-shadow: 0 4px 2px -2px gray;
+    padding: 2vw 0 2vw 2vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input {
+    height: 2em;
+    width: 250px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+input:focus:valid {
+    border: 3px solid rgb(0, 185, 93);
+    background-color: rgba(131, 131, 131, 0.1);
+}
+
+input:focus:invalid {
+    border: 3px solid rgb(172, 0, 0);
+}
+
+.formrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formrow > p {
+    margin-right: 30px;
+}
+
+.buttons-wrapper {
+    padding: 3vh 0px 0px 2vw;
+    height: auto;
+}
+
+.buttons-wrapper > p > span {
+    color: rgb(14, 92, 116);
+}
+
+.signup-button {
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-size: 1em;
+    font-family: inherit;
+    border-radius: 6px;
+    background-color: rgb(14, 92, 116);
+    margin-bottom: 10px;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #000;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}

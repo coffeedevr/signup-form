@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Hunter Federation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Play&family=Rambla&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="left-block">
+            <div class="logo-container">
+                <img id="logo" src="img/expeditionemblem.png" alt="">
+            </div>
+            <div class="footer">
+                <p id="footertext"> coffeedevr | </p>
+                <a href="https://github.com/coffeedevr/sketch-pad" target=”_blank”><img src="img/githublogo.png"
+                        height="50px"></a>
+            </div>
+        </div>
+        <div class="right-block">
+            <div class="tagline-block">
+                <div class="tagline-wrapper">
+                    <p class="tagline-msg msg-1">Do you want to become a hunter?</h1>
+                    <p class="tagline-msg msg-2">Or are you a fully-fledged hunter already?</h2>
+                    <p class="tagline-msg msg-3">Whatever the case, join the Hunting Guild!</p>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <form action="" method="get">
+                    <div class="form-control-wrapper">
+                        <div class="formrow">
+                            <p class="form-control"><label for="firstname">First Name: * <br><input type="text"
+                                        id="firstname" name="firstname" placeholder="Sung"
+                                        required><span></span></label></p>
+                            <p class="form-control"><label for="lastname">Last Name: * <br><input type="text"
+                                        id="lastname" name="lastname" placeholder="Jiwoo" required></label></p>
+                        </div>
+                        <div class="formrow">
+                            <p class="form-control"><label for="email">Email Address: * <br><input type="email"
+                                        id="email" name="email" placeholder="you@example.com" required></label></p>
+                            <p class="form-control"><label for="phone">Phone Number: * <br><input type="number"
+                                        id="phone" name="phone" placeholder="12345678912" required></label></p>
+                        </div>
+                        <div class="formrow">
+                            <p class="form-control"><label for="password">Password: * <br><input type="password"
+                                        id="password" name="password" required></label></p>
+                            <p class="form-control"><label for="confirmpassword">Confirm Password: * <br><input
+                                        type="password" id="confirmpassword" name="confirmpassword" minlength="8"
+                                        required></label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buttons-wrapper">
+                        <button type="submit" class="signup-button">Create Account</button>
+                        <p>Already have an account? <span><a href="">Log in here.</a></span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
